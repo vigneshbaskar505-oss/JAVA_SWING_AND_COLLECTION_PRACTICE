@@ -1,0 +1,29 @@
+package collections;
+
+import java.util.Stack;
+
+public class StackDemo {
+
+	public static void main(String[] args) {
+ 
+//	LIFO - Last in First Out
+		Stack<Integer> stack = new Stack<>();
+
+//		10,20,30,40 => 10,
+		
+        stack.push(10);//insert
+        stack.push(20);
+        stack.push(30);
+
+        System.out.println("Stack : " + stack);
+
+        System.out.println("Top Element : " + stack.peek());//top element
+
+        System.out.println("Removed : " + stack.pop());//delete 
+
+        System.out.println("After Pop : " + stack);
+		
+		
+	}
+
+}
