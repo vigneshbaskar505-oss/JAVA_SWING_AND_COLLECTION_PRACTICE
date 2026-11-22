@@ -1,0 +1,60 @@
+package collections;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class QueueExample {
+
+    public static void main(String[] args) {
+// FIFO - First In First Out => front, rear
+        Queue<Integer> q = new LinkedList<>();
+
+        // Adding elements
+        q.add(10);
+        q.add(20);
+        q.add(30);
+        q.add(40);
+
+        System.out.println("Queue : " + q);
+
+        // Peek
+        System.out.println("Front Element : " + q.peek());
+
+        // Remove
+        System.out.println("Removed : " + q.remove());
+
+        System.out.println("Queue after removal : " + q);
+
+        // Add another element
+        q.add(50);
+
+        System.out.println("Queue after adding 50 : " + q);
+        
+//        note: 50 is added at rear not at front
+        
+        
+        
+        /* Another Example*/
+        
+       System.out.println("Another Example for Queue Programming:");
+                Queue<String> customers = new LinkedList<>();
+
+                customers.add("Rahul");
+                customers.add("Pradnya");
+                customers.add("Anil");
+                customers.add("Suhail");
+
+                System.out.println("Customers : " + customers);
+
+                while (!customers.isEmpty()) {
+
+                    System.out.println(customers.remove() + " is served.");
+                }
+
+                System.out.println("Queue Empty");
+                
+          
+    
+    }
+        
+    }
