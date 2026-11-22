@@ -1,0 +1,33 @@
+package collections;
+
+import java.util.PriorityQueue;
+
+public class PriorityQueueDemo {
+
+	public static void main(String[] args) {
+		
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        // Add elements
+        pq.add(50);
+        pq.add(20);
+        pq.add(10);
+        pq.add(40);
+        pq.add(30);
+
+        System.out.println("Priority Queue : " + pq);
+
+        System.out.println("Peek : " + pq.peek());
+
+        while (!pq.isEmpty()) {
+            System.out.println("Removed : " + pq.poll());
+        }
+ 
+		
+//		Note: A PriorityQueue behaves differently because it organizes elements
+//		by priority internally using a heap,
+//		not by simple front and rear positions
+	}
+
+}
